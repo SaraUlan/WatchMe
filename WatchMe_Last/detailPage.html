@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icon/Ellipse 2.svg"/>
+    <title>Watch Me</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">WatchMe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse w-100 justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricingPage.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="admin.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex flex-row my-4 my-lg-2 flex-row">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <main class="main mt-5">
+            <div class="text-white">
+                <div class="row">
+                    <div class="col col-sm- col-md-12 col-lg-5">
+                        <img src="images/pictures/list1.svg" alt="" class="w-100">
+                    </div>
+                    <div class="col col-sm- col-md-12 col-lg-7">
+                        <h2 class="text-decoration-underline text-uppercase">Достучаться до небес (1997)</h2>
+                        <br>
+                        <p class="h2">Продолжительность 87мин</p>
+                        <p class="h2">Режиссёр Томас Ян.</p>
+                        <p class="h2">Жанр: криминал, комедия, драма.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="">
+                    <h1 class="text-center h1">Краткое содержание</h1>
+                    <br>
+                    <p class="text-left fs-5">Мартин Брест (Тиль Швайгер, «Серебряный Георгий» Московского
+                        МКФ) и Руди Вурлицер (Ян Йозеф Лиферс) познакомились в
+                        больнице, где обоим поставили смертельные диагнозы. Первый, узнав, что новый знакомый никогда в
+                        жизни не видел моря,
+                        предлагает отправиться в Нидерланды, на побережье. Чтобы раздобыть денег, приятели грабят
+                        автозаправочную станцию и
+                        отделение банка, а затем — угоняют автомобиль, в багажнике которого обнаруживают кейс с
+                        миллионом марок наличными.
+                        Поездка предстоит увлекательная!
+                        Также в ролях: Тьерри ван Вервеке (Хенк, бельгиец), Мориц Бляйбтрой (Абдул, араб), Хууб Штапель
+                        (Фрэнки «Бой» Белуга),
+                        Леонард Лансинк (комиссар Шнайдер), Ральф Херфорт (ассистент Келлер), Корнелия Фробёсс (фрау
+                        Брест, мама Мартина),
+                        Рутгер Хауэр (Куртиц), Кристиана Пауль (продавщица в бутике), Дана Швайгер (молодая женщина),
+                        Зёнке Вортманн (режиссёр),
+                        Томас Ян (таксист), Бернд Айхингер (человек с деньгами).
+                        Евгений Нефёдов, AllOfCinema.com</p>
+                </div>
+                <div class="film__player">
+                    <div class="player">
+
+                    </div>
+                </div>
+                <div class="film__reviews">
+                    <h1>Комментарии</h1>
+                    <div class="reviews" id="reviews"></div>
+                    <div class="comment_write">
+                        <input type="text" id="comment_text" class="form-control" placeholder="Оставьте комментарий" width="100%">
+                        <button id="comment_btn" class="btn btn-primary">Оставить комментарий</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+
+        <div class="footer">
+            <ul class="footer__menu">
+                <li><a href="#" class="home-link">home</a></li>
+                <li><a href="#" class="pricing-link">pricing</a></li>
+                <li><a href="#" class="about-link">about</a></li>
+            </ul>
+            <hr>
+            <div class="footer__end">
+                <em><a href="#" class="main__page">2023 se-go, Inc&#169;</a></em>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="comment.js"></script>
+</body>
