@@ -1,18 +1,24 @@
-// Check if a user is logged in and their admin status in localStorage
 const user = localStorage.getItem("user");
 
 if (user) {
     // User is logged in
-    document.getElementById("loginItem").style.display = "none"; // Hide the "Login" link
-    document.getElementById("usernameLink").textContent = user; // Set the username
-    document.getElementById("usernameLink").style.display = "block"; // Show the username
+    document.getElementById("loginItem").style.display = "none";
+    document.getElementById("usernameLink").textContent = user;
+    document.getElementById("usernameLink").style.display = "block";
+    document.getElementById("logoutButton").style.display = "block";
+
+    const logoutButton = document.getElementById("logoutButton");
+    if (logoutButton) {
+        logoutButton.addEventListener("click", function () {
+            localStorage.removeItem("user");
+            location.reload();
+        });
+    }
 } else {
-    // User is not logged in
-    document.getElementById("loginItem").style.display = "block"; // Show the "Login" link
-    document.getElementById("usernameLink").style.display = "none"; // Hide the username
+    document.getElementById("loginItem").style.display = "block";
+    document.getElementById("usernameLink").style.display = "none";
 }
 
 if (user === "Admin") {
-    // User is an admin
-    document.getElementById("adminItem").style.display = "block"; // Show the "Admin" link
+    document.getElementById("adminItem").style.display = "block";
 }
