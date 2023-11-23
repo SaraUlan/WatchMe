@@ -190,7 +190,9 @@
                             alert(
                                 "Login successful! Welcome, " + userData.user
                             );
-                            localStorage.setItem("user", userData.user);
+                            localStorage.setItem("user", storedUserData);
+                            localStorage.setItem("logged", true);
+                            localStorage.setItem("mail", mail);
                         } else {
                             alert("Incorrect password. Please try again.");
                         }
