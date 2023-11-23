@@ -6,7 +6,7 @@ This project is a movie and TV show streaming website created using HTML, CSS, B
 
 - Browse a wide range of movies, TV shows, doramas, and anime.
 - Search for specific titles.
-  Read descriptions before.
+- Read descriptions before.
 - Responsive design for a seamless viewing experience on different devices.
 
 # Subscription Packages
