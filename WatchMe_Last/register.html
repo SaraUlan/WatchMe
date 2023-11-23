@@ -193,27 +193,59 @@
                     const password = document.getElementById("password").value;
                     const password2 =
                         document.getElementById("password2").value;
+                    const sub = false;
 
+                    // Validate email format
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(mail)) {
+                        alert(
+                            "Invalid email format. Please enter a valid email address."
+                        );
+                        return;
+                    }
+
+                    // Validate username (alphanumeric with underscores)
+                    const usernameRegex = /^[a-zA-Z0-9_]+$/;
+                    if (!usernameRegex.test(user)) {
+                        alert(
+                            "Invalid username. Please use only letters, numbers, and underscores."
+                        );
+                        return;
+                    }
+
+                    // Validate password complexity
+                    const passwordRegex =
+                        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]).{6,}$/;
+                    if (!passwordRegex.test(password)) {
+                        alert(
+                            "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character."
+                        );
+                        return;
+                    }
+
+                    // Check if passwords match
                     if (password !== password2) {
                         alert("Passwords do not match. Please try again.");
                         return;
                     }
 
+                    // Check if email is already registered
                     if (localStorage.getItem(mail) !== null) {
                         alert("Username with this email already exists.");
-
                         return;
                     }
 
+                    // Store user data in localStorage
                     localStorage.setItem(
                         mail,
-                        JSON.stringify({ user, password })
+                        JSON.stringify({ user, password, sub })
                     );
 
                     alert(
                         "Registration successful! You can now log in with your username and password."
                     );
 
+                    // Reset the form
                     registrationForm.reset();
                 });
             });
