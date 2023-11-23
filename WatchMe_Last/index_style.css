@@ -1,0 +1,43 @@
+.slider {
+    position: relative;
+}
+
+.slider-content {
+    text-align: center;
+}
+
+.slider-content img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.slider-content img:first-child {
+    display: block;
+}
+
+.slider-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+.slider-left {
+    left: 0;
+}
+
+.slider-right {
+    right: 0;
+}
+
+footer {
+    background: linear-gradient(to top, #1e1e1e, #1369ea);
+    padding: 20px;
+}
+
+.text-light {
+    color: #fff;
+}

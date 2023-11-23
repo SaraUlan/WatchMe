@@ -9,7 +9,7 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="index_styles.css" />
+        <link rel="stylesheet" href="index_style.css" />
 
         <title>Watch Me</title>
     </head>
@@ -179,7 +179,7 @@
             <div class="d-flex flex-wrap justify-content-around">
                 <div class="bg-primary rounded">
                     <p class="p-0 m-0 text-center text-dark">Фильмы</p>
-                    <a href="#films"
+                    <a href="catalog.html"
                         ><img
                             src="images/icon/romantic__ganre.svg"
                             class="opacity-50 img-fluid"
@@ -188,7 +188,7 @@
                 </div>
                 <div class="bg-primary rounded">
                     <p class="p-0 m-0 text-center text-dark">Сериалы</p>
-                    <a href="#Series"
+                    <a href="catalog.html"
                         ><img
                             src="images/icon/drama__ganre.svg"
                             class="opacity-50 img-fluid"
@@ -197,7 +197,7 @@
                 </div>
                 <div class="bg-primary rounded">
                     <p class="p-0 m-0 text-center text-dark">Дорамы</p>
-                    <a href="Doramas"
+                    <a href="catalog.html"
                         ><img
                             src="images/icon/comedy__ganre.svg"
                             class="opacity-50 img-fluid"
@@ -206,7 +206,7 @@
                 </div>
                 <div class="bg-primary rounded">
                     <p class="p-0 m-0 text-center text-dark">Аниме</p>
-                    <a href="Anime"
+                    <a href="catalog.html"
                         ><img
                             src="images/icon/mystery.svg"
                             class="opacity-50 img-fluid"
@@ -215,7 +215,7 @@
                 </div>
                 <div class="bg-primary rounded">
                     <p class="p-0 m-0 text-center text-dark">Аниме</p>
-                    <a href="Anime"
+                    <a href="catalog.html"
                         ><img
                             src="images/icon/music__ganre.svg"
                             class="opacity-50 img-fluid"
@@ -229,7 +229,7 @@
             <h1 class="display-4 text-light text-center pb-3">
                 РЕКОМЕНДУЕМЫЕ ФИЛЬМЫ
             </h1>
-            <div class="slider" id="films">
+            <div class="slider d-flex justify-content-center" id="films">
                 <button
                     class="slider-button slider-arrow slider-left"
                     onclick="changeSlide('series', -1)"
@@ -242,9 +242,6 @@
                     <img src="images/pictures/film__rec1.svg" alt="Film 1" />
                     <img src="images/pictures/film__rec2.svg" alt="Film 2" />
                     <img src="images/pictures/rec__film3.svg" alt="Film 3" />
-                    <img src="images/pictures/film__rec4.svg" alt="Film 4" />
-                    <img src="images/pictures/film__rec5.svg" alt="Film 5" />
-                    <img src="images/pictures/film__rec6.svg" alt="Film 6" />
                 </div>
                 <button
                     class="slider-button slider-arrow slider-right"
@@ -256,94 +253,6 @@
         </div>
         <div class="container text-center pt-5">
             <h1 class="display-4 text-light text-center pb-3">
-                РЕКОМЕНДУЕМЫЕ CЕРИАЛЫ
-            </h1>
-            <div class="slider" id="series">
-                <button
-                    class="slider-button slider-arrow slider-left"
-                    onclick="changeSlide('series', -1)"
-                >
-                    &#9664;
-                    <!-- Left arrow symbol -->
-                </button>
-                <div class="slider-content">
-                    <img src="images/pictures/rec__ser1.svg" alt="Series 1" />
-                    <img src="images/pictures/rec__ser2.svg" alt="Series 2" />
-                    <img src="images/pictures/rec__ser3.svg" alt="Series 3" />
-                    <!-- Add more series images here -->
-                </div>
-                <button
-                    class="slider-button slider-arrow slider-right"
-                    onclick="changeSlide('series', 1)"
-                >
-                    &#9654;
-                    <!-- Right arrow symbol -->
-                </button>
-            </div>
-        </div>
-        <div class="container text-center pt-5">
-            <h1 class="display-4 text-light text-center pb-3">
-                РЕКОМЕНДУЕМЫЕ АНИМЕ
-            </h1>
-            <div class="slider" id="anime">
-                <button
-                    class="slider-button slider-arrow slider-left"
-                    onclick="changeSlide('anime', -1)"
-                >
-                    &#9664;
-                    <!-- Left arrow symbol -->
-                </button>
-                <div class="slider-content">
-                    <img src="images/pictures/rec__anime1.svg" alt="Anime 1" />
-                    <img src="images/pictures/rec__anime2.svg" alt="Anime 2" />
-                    <img src="images/pictures/rec__anime3.svg" alt="Anime 3" />
-                    <!-- Add more anime images here -->
-                </div>
-                <button
-                    class="slider-button slider-arrow slider-right"
-                    onclick="changeSlide('anime', 1)"
-                >
-                    &#9654;
-                    <!-- Right arrow symbol -->
-                </button>
-            </div>
-        </div>
-        <div class="container text-center pt-5">
-            <h1 class="display-4 text-light text-center pb-3">
-                РЕКОМЕНДУЕМЫЕ ДОРАМЫ
-            </h1>
-            <div class="slider" id="dorama">
-                <button
-                    class="slider-button slider-arrow slider-left"
-                    onclick="changeSlide('dorama', -1)"
-                >
-                    &#9664;
-                    <!-- Left arrow symbol -->
-                </button>
-                <div class="slider-content">
-                    <img
-                        src="images/pictures/rec__dorama1.svg"
-                        alt="dorama 1           "
-                    />
-                    <img
-                        src="images/pictures/rec__dorama2.svg"
-                        alt="Dorama 2"
-                    />
-                    <img
-                        src="images/pictures/rec__dorama3.svg"
-                        alt="Dorama 3"
-                    />
-                    <!-- Add more anime images here -->
-                </div>
-                <button
-                    class="slider-button slider-arrow slider-right"
-                    onclick="changeSlide('dorama', 1)"
-                >
-                    &#9654;
-                    <!-- Right arrow symbol -->
-                </button>
-            </div>
-        </div>
 
         <br />
         <br />
@@ -397,12 +306,10 @@
             <p class="text-center text-muted">© 2022 Company, Inc</p>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="search.js"></script>
     </body>
+    <script src="index.js">
 
+    </script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
