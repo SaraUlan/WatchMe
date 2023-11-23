@@ -104,33 +104,33 @@
             <div class="main_admin w-50">
                 <h1>New Article</h1>
                 <div class="newFilm container-fluid">
-                    <form action="" class="">
+                    <form id="filmForm" class="" enctype="multipart/form-data">
                         <div class="form-group rounded">
                             <label for="name_film">Film name:</label>
-                            <input type="text" id="fname" class="form-control" name="fname" class="form-control">
+                            <input type="text" id="filmName" class="form-control" name="filmName">
                         </div>
                         <div class="form-group rounded">
                             <label for="continuance_film">Continuance:</label>
-                            <input type="time" id="fname" class="form-control" name="fname">
+                            <input type="time" id="continuance" class="form-control" name="continuance">
                         </div>
                         <div class="form-group rounded">
-                            <label for="Directedbyfilm">Directed by:</label>
-                            <input type="text" id="fname" class="form-control" name="fname">
+                            <label for="directedByFilm">Directed by:</label>
+                            <input type="text" id="directedBy" class="form-control" name="directedBy">
                         </div>
                         <div class="form-group rounded">
                             <label for="genre_film">Genre</label>
-                            <input type="text" id="fname" class="form-control" name="fname">
+                            <input type="text" id="genre" class="form-control" name="genre">
                         </div>
                         <div class="form-group rounded">
-                            <label for="image_film"> Add img:</label>
-                            <input type="image" name="" class="form-control" id="fname">
+                            <label for="image_film">Add img:</label>
+                            <input type="file" id="image" name="image" class="form-control" alt="FilmImage" accept="image/*">
                         </div>
                         <div class="form-group rounded">
                             <label for="about_film">About film</label>
-                            <input type="text" name="" class="form-control" id="fabout">
+                            <input type="text" id="about" name="about" class="form-control">
                         </div>
                         <div class="form-group rounded mt-2">
-                            <input type="submit" class="form-control" value="submit">
+                            <input type="submit" class="form-control" id="submit">
                         </div>
                     </form>
                 </div>
@@ -139,6 +139,7 @@
         </div>
     </main>
     <script src="login.js"></script>
+    <script src="./javscript/admin/addArticle.js"></script>
 </body>
 
 </html>
