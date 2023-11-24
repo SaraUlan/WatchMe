@@ -409,7 +409,7 @@ a {
 }
 
 .page__film-right {
-    width: 408px;
+    max-width: 308px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -443,6 +443,7 @@ a {
 
 .page__film-left {
     border: 2px solid white;
+    max-width: 1000px;
 }
 
 .page__films {
@@ -644,4 +645,9 @@ h2 {
 
 .HelloText h1{
     color: white;
+}
+
+.film__img{
+    max-width: 300px;
+    max-height: 500px;
 }
