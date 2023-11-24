@@ -140,16 +140,16 @@
                         <table class="filter mt-2 mb-2">
                             <tr class="text-center">
                                 <th>
-                                    <select class="form-select mb-2" aria-label="">
+                                    <select id="genreSelect" class="form-select mb-2" aria-label="">
                                         <option selected>Жанр</option>
                                         <option value="1">Боевик</option>
-                                        <option value="2">Вестерн</option>
-                                        <option value="3">Гангстерский фильм</option>
-                                        <option value="4">Трагикомедия</option>
-                                        <option value="5">Детектив</option>
-                                        <option value="6">Драма</option>
+                                        <option value="2">Драма</option>
+                                        <option value="3">Комедия</option>
+                                        <option value="4">Хоррор</option>
+                                        <option value="5">Мюзикл</option>
+                                        <option value="6">Вестерн</option>
                                         <option value="7">Исторический фильм</option>
-                                        <option value="8">Комедия</option>
+                                        <option value="8">Детектив</option>
                                         <option value="9">Мелодрама</option>
                                         <option value="10">Музыкальный фильм</option>
                                         <option value="11">Политический фильм</option>
@@ -297,10 +297,10 @@
 <script>
     const urlParams = new URLSearchParams(window.location.search);
     document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("genreSelect").value =
-            urlParams.get("g");
+        document.getElementById("genreSelect").value = urlParams.get("g");
     });
 </script>
+<script src="login.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
